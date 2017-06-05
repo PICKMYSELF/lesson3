@@ -4,7 +4,7 @@ module.exports = function main(str) {
   
   function sum(n) {
     if (n > 9) {
-      return n % 10 + sum(n / 10);
+      return n % 10 + sum(Math.floor(n / 10));
     } else {
       return n;
     }  
